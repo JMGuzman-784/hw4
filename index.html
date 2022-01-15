@@ -6,16 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Share+Tech&display=swap" rel="stylesheet">
+    <title>Coding Quiz</title>
 </head>
 
 <body>
-    <h1>Coding Quiz Challenge</h1>
-    <button id="start">Start Quiz</button>
-    <!-- Questions and Answers -->
-    <h2 id="question"></h2>
-    <div id="answers">First question here</div>
+    
+    <header>
+        <div class="scores">
+            <a id="highscores-link">View high scores</a>
+        </div>
+        <div id="timer" class="timer">
+            Time
+        </div>
+    </header>
+
+    <section id="start-container" class="start-quiz">
+        <h1 class="unl"><span>&#60;</span>Coding Quiz Challenge<span>&#62;</span> </h1>
+        <p>
+            This quiz will include questions based on JavaScript and 
+            code in general. Once you are ready click "start quiz" to begin. 
+        </p>
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+        </div>
+    </section>
+
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+    </section>
+
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <div class="cntin">
+            <label id="initials-label">Please enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+            </div>    
+        </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
+
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/questions.js"></script>
+    
 </body>
 
 </html>

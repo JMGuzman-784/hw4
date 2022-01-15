@@ -1,0 +1,87 @@
+/* Color & fonts */
+ :root {
+    --red-color: rgb(155, 27, 27);
+    --text-color: white;
+    --btnh-color: rgb(158, 0, 158);
+    
+}
+
+/* Start Quiz */
+.start-quiz {
+    text-align: center;
+}
+
+/* Buttons */
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Share Tech', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: var(--red-color);
+    color: var(--text-color);
+    transition: all .5s ease;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 5px;
+    border-radius: 4px;
+}
+
+button:hover {
+    color: var(--text-color);
+    background-color: var(--btnh-color);
+}
+
+.hide {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.scores {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 5px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px; 
+}
+
+.cntin {
+    text-align: center;
+}
+
+span {
+    content: "\003E";
+}
+
+.unl {
+    text-decoration: underline;
+}

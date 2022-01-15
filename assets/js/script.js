@@ -57,7 +57,7 @@ function setNextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
-// Show question
+// Show question and listen for when the answer is clicked
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {

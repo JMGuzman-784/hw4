@@ -3,7 +3,6 @@
     --red-color: rgb(155, 27, 27);
     --text-color: white;
     --btnh-color: rgb(158, 0, 158);
-    
 }
 
 /* Start Quiz */
@@ -49,6 +48,7 @@ button:hover {
 
 .hide {
     display: none;
+    transition: ease-in-out;
 }
 
 .controls {

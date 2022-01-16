@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Share+Tech&display=swap" rel="stylesheet">
     <title>Coding Quiz</title>
 </head>
-<!-- Add comments to html, css, and javascript -->
+
 <body>
     
     <header>
@@ -24,8 +24,8 @@
     </header>
 
     <section id="start-container" class="start-quiz">
-        <h1 class="unl"><span>&#60;</span>Coding Quiz Challenge<span>&#62;</span> </h1>
-        <p>
+        <h1 class="unl"><span>&#60;</span>Coding Quiz Game<span>&#62;</span> </h1>
+        <p class="des">
             This quiz will include questions based on JavaScript and 
             code in general. Once you are ready click "start quiz" to begin. 
         </p>
@@ -63,11 +63,18 @@
     <section id="highscores" class="highscores-container hide">
         <div id="high-scores">
             <h1 class="centered">Leaderboard</h1>
+            <div class="details">
+            <p class="nameandscore">Name</p>
+            <p class="nameandscore">Score</p>
+            </div>
+
             <div id="highscore" class="highscore highscore-list">
             </div>
+            
             <div class="controls">
                 <button id="restart-btn">Restart</button>
                 <button id="clear-btn">Clear Scores</button>
+            
             </div>
         </div>
         

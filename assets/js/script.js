@@ -9,7 +9,7 @@ const startContainerElement = document.getElementById("start-container");
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const checkAnswerElement = document.getElementById("check-answer")
-const isWin = false;
+
 const scores = JSON.parse(localStorage.getItem("scores")) || [];
 const viewLeaderboard = document.getElementById("highscores-link");
 const submitButton = document.getElementById("submit-btn");
@@ -74,7 +74,7 @@ function showQuestion(question) {
 
 // Hides previous question and answers
 function resetState() {
-  //clearStatusClass(document.body)
+  
   nextButton.classList.add("hide");
   checkAnswerElement.classList.add("hide");
   while (answerButtonsElement.firstChild) {
@@ -83,8 +83,8 @@ function resetState() {
   }
 }
 
-function selectAnswer(e) {
-  const selectedButton = e.target
+function selectAnswer(event) {
+  const selectedButton = event.target
   const correct = selectedButton.dataset.correct;
   checkAnswerElement.classList.remove("hide")
   // Check if the answer correct or wrong then show text
@@ -96,7 +96,7 @@ function selectAnswer(e) {
           timeAmount = 0;
       } else {
           // If the aswer is wrong, deduct time by 10
-          timeAmount -= 10;
+          timeAmount -= 5;
       }
   }
   //setStatusClass(document.body, correct);
@@ -178,7 +178,7 @@ function showHighScores(initials) {
   // How the score is shown in the HTML after submitting
   let highscoreElement = document.getElementById("highscore");
   highscoreElement.innerHTML = "";
-  //console.log(scores)
+  
   for (i = 0; i < scores.length; i++) {
       // Create div with player name 
       let div1 = document.createElement("div");
@@ -202,6 +202,7 @@ viewLeaderboard.addEventListener("click", showHighScores);
 submitButton.addEventListener("click", function (event) {
   event.preventDefault()
   let initials = document.querySelector("#initials-field").value;
+  // Show player scors
   showHighScores(initials);
 });
 

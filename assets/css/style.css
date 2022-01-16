@@ -1,8 +1,12 @@
-/* Color & fonts */
+/* Color */
  :root {
-    --red-color: rgb(155, 27, 27);
+    --purple-color: purple;
     --text-color: white;
-    --btnh-color: rgb(158, 0, 158);
+    --btnh-color: cyan;
+    --black-color: black;
+    --grey-color: rgb(133, 133, 133);
+    --lightgrey-color: rgb(161, 161, 161);
+
 }
 
 /* Start Quiz */
@@ -10,17 +14,24 @@
     text-align: center;
 }
 
-/* Buttons */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 h1, h2, h3 {
     text-align: center;
 }
 
 body {
+    background-color: rgb(11, 184, 184);
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'Share Tech', sans-serif;
     margin: 0 auto;
     width: 80%;
+    line-height: 1.5;
 }
 
 header {
@@ -30,20 +41,27 @@ header {
     margin-bottom: 25px;
 }
 
+/* Buttons */
 button {
-    background-color: var(--red-color);
+    background-color: var(--purple-color);
     color: var(--text-color);
     transition: all .5s ease;
     font-family:'Montserrat', sans-serif;
     text-align: center;
     font-size: 17px;
     padding: 10px 5px;
-    border-radius: 4px;
+    margin: 10px;
+    border: none;
 }
 
 button:hover {
-    color: var(--text-color);
+    color: var(--black-color);
     background-color: var(--btnh-color);
+    transition: all .5s ease;
+}
+
+a, .timer {
+    font-size: 20px;
 }
 
 .hide {
@@ -57,14 +75,14 @@ button:hover {
     align-items: center;
 }
 
-
-
 .scores {
     cursor: pointer;
 }
 
 .btn {
-    padding: 10px 5px;
+    width: auto;
+    padding: 25px;
+    border: 1px solid;
 }
 
 .btn-grid {
@@ -76,6 +94,7 @@ button:hover {
 
 .cntin {
     text-align: center;
+    font-size: 20px;
 }
 
 span {
@@ -83,5 +102,56 @@ span {
 }
 
 .unl {
+    font-size: 28px;
     text-decoration: underline;
+}
+
+/* Leaderboard */
+.highscore {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+/* sizing */
+.name-div,
+.score-div {
+    flex: 1 35%;
+    padding: 10px 0;
+    border: 1px solid;
+    background-color: var(--lightgrey-color);
+    font-size: 20px;
+}
+
+.nameandscore {
+    display: flex;
+    flex: 1 35%;
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
+}
+
+.centered {
+    color: var(--text-color);
+    background-color: var(--black-color);
+    padding: 10px 8px; 
+}
+
+.des {
+    font-size: 25px;
 }

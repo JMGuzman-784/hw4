@@ -1,4 +1,4 @@
-# Welcome to the Coding Quiz
+# Coding Quiz Game
 
 ## Description
 
@@ -12,4 +12,4 @@ Below you will see and be able to take a coding quiz. This quiz was created usin
 
 * Here is the link to my github : [Github/JMGuzman-784](https://github.com/JMGuzman-784/hw4)
 
-* Here is the pages : [JMGuzman-784/CodingQuiz](https://jmguzman-784.github.io/hw3/)
+* Here is the pages : [JMGuzman-784/CodingQuiz](https://jmguzman-784.github.io/hw4/)

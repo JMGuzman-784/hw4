@@ -6,7 +6,7 @@ Below you will see and be able to take a coding quiz. This quiz was created usin
 
 ## Screenshot
 
-![Coding Quiz.](./assets/images/Quiz_images.png)
+![Coding Quiz.](./assets/images/Quiz_image.png)
 
 ## Link to Quiz
 
